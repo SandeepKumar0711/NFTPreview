@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(217, 54%, 11%);
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    hr {
+      color: hsl(215, 32%, 27%);
+    }
+
+    .card-body {
+      background-color: hsl(216, 50%, 16%);
+      width: 20%;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .equilibrium {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .equilibrium:hover {
+      cursor: pointer;
+      background-image: url(./images/icon-view.svg);
+      z-index: 1;
+    }
+
+    .head {
+      font-size: 1.1rem;
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+    }
+
+    .para {  
+      color: hsl(215, 51%, 70%);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .ether{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ether1 {
+      display: inline-block;
+      color: hsl(178, 100%, 50%);
+      font-weight: 600;
+    }
+
+    .empty{
+      padding: 0px 54px 30px;
+    }
+
+    .ether2 {
+      display: inline-block;
+      color: hsl(178, 100%, 50%);
+      font-weight: 600;
+    }
+
+    hr{
+      border: 1px solid ;
+    }
+
+    .credits {
+      margin-top: 20px;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+
+    .avtar {
+      width: 10%;
+      border: 2px solid wheat;
+      border-radius: 50%;
+    }
+
+    .highlight{
+      color: hsl(215, 51%, 70%);
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+
+    .hovering:hover{
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card-body">
+    <img src="./images/image-equilibrium.jpg" class=" equilibrium" alt="image-equilibrium">
+    <h1 class="head , hovering">Equilibrium #3429</h1>
+    <p class="para">Our Equilibrium collection promotes balance and calm.
+    <div class="ether">
+      <div class="ether1">
+        <img src="./images/icon-ethereum.svg" alt="Etherium"> 0.041 ETH
+      </div>
+      <div class="empty"></div>
+      <div class="ether2">
+        <img src="./images/icon-clock.svg" alt=""> 3 days left
+      </div>
+    </div>
+    <hr>
+    <div class="credits">
+        <img src="./images/image-avatar.png" alt="" class="avtar">
+        <span class="highlight">Creation of </span> <span class="hovering">Jules Wyvern</span>
+    </div>
+    </p>
+  </div>
+</body>
+</html>
